@@ -152,6 +152,14 @@ button {
     top: 0;
     height: 280px;
     z-index: -1;
+    font-size: 1.5rem;
+}
+
+.feedback-container h3:first-child{
+    color: green;
+}
+.feedback-container #feedback-text{
+    color: tomato;
 }
 
 .opacity{

@@ -27,22 +27,24 @@ feedbackBox.forEach((box) => {
 
 sendReviewBtn.addEventListener('click', () => {
     if(!isReviewdSelected) return;
+    console.log(reviewdValue)
     let emoji = "";
     switch(reviewdValue){
-        case "Unhappy":
+        case "unhappy":
          emoji = "😒";
          break;
 
-         case "Natural":
+         case "natural":
          emoji = "😐";
          break;
 
-         case "Satiesfied":
+         case "satiesfied":
          emoji = "🙂";
          break;
     }
 
-   feedbackContainer.children[1].textContent = "Feedcack:  " + reviewdValue +" "+emoji;
+
+   feedbackContainer.children[1].textContent = "Feedback:  " + reviewdValue.toUpperCase() +" "+emoji;
    feedbackContainer.classList.add('opacity');
 })
 
