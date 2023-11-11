@@ -44,7 +44,7 @@ sendReviewBtn.addEventListener('click', () => {
     }
 
 
-   feedbackContainer.children[1].textContent = "Feedback:  " + reviewdValue.toUpperCase() +" "+emoji;
+   feedbackContainer.children[1].textContent = "Feedback :  " + reviewdValue.toUpperCase() +" "+emoji;
    feedbackContainer.classList.add('opacity');
 })
 
