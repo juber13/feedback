@@ -1,0 +1,150 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: #e0ffff;
+}
+
+.wrapper {
+  width: 400px;
+  height: 350px;
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 8px;
+  justify-content: space-around;
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.choices {
+  display: flex;
+  gap: 10px;
+  position: relative;
+}
+
+.choices .feedback-box {
+  width: 80px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 1rem;
+  font-size: 1rem;
+  transition: all 0.4s ease;
+  border-radius: 5px;
+}
+
+.choices .feedback-box:hover {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  cursor: pointer;
+}
+
+.choices .feedback-box:nth-child(1):hover , .active.feedback-box:nth-child(1){
+  background: #f55f5f;
+}
+
+.active.feedback-box:nth-child(2){
+    background: #f55f5f;
+}
+
+.active.feedback-box:nth-child(2){
+    background: #eeeb4f;
+}
+
+.active.feedback-box:nth-child(3){
+    background: pink;
+} 
+
+
+.choices .feedback-box:nth-child(2):hover , .active.feedback-box:nth-child(2) {
+  background: #eeeb4f;
+}
+.choices .feedback-box:nth-child(3):hover, .active.feedback-box:nth-child(3) {
+  background: pink;
+}
+
+.choices .feedback-box span:first-child {
+  font-size: 2rem;
+  transition: all 0.2s ease-in;
+}
+
+.active.feedback-box span:first-child {
+    /* font-size: 3rem; */
+    /* transition: all 0.2s ease-in; */
+    transform: scale(1.5);
+  }
+  
+.choices .feedback-box:hover span:first-child {
+  font-size: 3rem;
+}
+
+/* span:first-child{
+    position: relative;
+} */
+/* .choices .feedback-box:nth-child(1) span:first-child,
+.choices .feedback-box:nth-child(2) span:first-child,
+.choices .feedback-box:nth-child(3) span:first-child {
+  position: relative;
+} */
+
+/* .choices .feedback-box:nth-child(1):hover span:first-child::after {
+  content: "😢";
+  position: absolute;
+  left: 0;
+}
+
+
+
+.choices .feedback-box:nth-child(2):hover span:first-child::after{
+    content: "🫡";
+    position: absolute;
+    left: 0;
+}
+
+.choices .feedback-box:nth-child(3):hover span:first-child::after {
+    content: "😍";
+    position: absolute;
+    left: 0;
+}  */
+
+
+
+button {
+  padding: 0.5rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: rgb(164, 236, 164);
+  color: #000;
+  border-radius: 5px;
+}
+
+
+.feedback-container{
+    background:#fff;
+    padding: 2rem;
+    position: absolute;
+    top: 0;
+    height: 280px;
+    z-index: -1;
+}
+
+.opacity{
+    z-index: 1  !important;
+}
