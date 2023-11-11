@@ -48,6 +48,14 @@ body {
   font-size: 1rem;
   transition: all 0.4s ease;
   border-radius: 5px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+
+}
+
+#result h2{
+   font-weight: bold;
+   color: #f55f5f;
 }
 
 .choices .feedback-box:hover {
@@ -126,13 +134,14 @@ body {
 
 
 button {
-  padding: 0.5rem;
+  padding: 0.9rem;
   border: none;
   outline: none;
   cursor: pointer;
-  background: rgb(164, 236, 164);
-  color: #000;
+  /* background: rgb(164, 236, 164); */
+  background-color: tomato;
   border-radius: 5px;
+  color: #fff;
 }
 
 
